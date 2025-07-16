@@ -18,7 +18,7 @@ function Dashboard() {
   const [emissionResult, setEmissionResult] = useState(null);
   const [error, setError] = useState("");
 
-  console.log("BASE_URL:", BASE_URL);
+
 
  
 

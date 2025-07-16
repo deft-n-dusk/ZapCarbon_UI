@@ -80,7 +80,7 @@ const Summary = () => {
     recycling: "#81C784",
   };
 
-  console.log("Raw emissionsOverTime:", summary.emissionsOverTime);
+  
   // ✅ Prepare Emissions Over Time Data
   const validTimeData = summary.emissionsOverTime
     .filter(item => item.month && item.day && typeof item.totalEmission === "number")
@@ -90,7 +90,7 @@ const Summary = () => {
     }));
 
   
-  console.log("Transformed data:", validTimeData);
+  
 
   const emissionOverTimeData = {
     datasets: [
