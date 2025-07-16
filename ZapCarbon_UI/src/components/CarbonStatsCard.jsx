@@ -12,7 +12,7 @@ const CarbonStatsCard = ({ emission, activityType, onReset }) => {
 
 
   return (
-    <div className="bg-gradient-to-br from-[#87bc71] to-[#447c62] px-6 py-3  rounded-2xl shadow-lg text-white w-[550px] ">
+    <div className="bg-gradient-to-br from-[#87bc71] to-[#447c62] px-6 py-3  rounded-2xl shadow-lg text-white w-[550px] transition-transform duration-500 hover:scale-[1.04] ">
       <h2 className="text-xl font-semibold mb-1 ">Activity : {activityType}</h2>
       <p className="text-sm mb-5">You emitted {emission.toFixed(2)} kg CO₂</p>
 

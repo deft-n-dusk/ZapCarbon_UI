@@ -89,7 +89,7 @@ if (loading) return <Loader/>
 
 
         {/* Activity Selector*/}
-        <div className='pt-12 absolute left-24 z-20 mt-[1.2rem]'>
+        <div className='pt-12 absolute left-24 z-20 mt-[1.2rem] transition-transform duration-500 hover:scale-[1.04]'>
           <h1 className='bg-[#bfe2b5] w-[45rem] h-[4rem] rounded-xl  text-[1.3rem] font-serif text-center pt-4 text-slate-700'>Welcome {user.firstName}, Select your Activity</h1>
          
           <select
@@ -109,7 +109,7 @@ if (loading) return <Loader/>
 
 
         {/* Input value */}
-        <div className='pt-[12.5rem]  absolute left-24 z-10'>
+        <div className='pt-[12.5rem]  absolute left-24 z-10 transition-transform duration-500 hover:scale-[1.04]'>
 
           <input
             type="number"
@@ -128,7 +128,7 @@ if (loading) return <Loader/>
         {/* Submit Button */}
       <button
         onClick={handleSubmit}
-      className="bg-[#82b884] text-black font-semibold px-6 py-3 mt-[17rem] ml-[25rem] rounded hover:bg-[#126d50] hover:text-white "
+      className="bg-[#82b884] text-black font-semibold px-6 py-3 mt-[17rem] ml-[25rem] rounded transition-transform duration-500 hover:scale-[1.05] hover:bg-[#126d50] hover:text-white "
       >
         Submit
       </button>

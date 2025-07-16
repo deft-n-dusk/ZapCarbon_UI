@@ -44,7 +44,7 @@ const Login = () => {
   };
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#3b7c76] via-[#409576] to-[#6bb285] flex items-center justify-center font-sans px-4">
-      <div className="bg-[#e2eedf] rounded-3xl shadow-2xl p-10 w-full max-w-md transform transition duration-500 hover:scale-[1.01]">
+      <div className="bg-[#e2eedf] rounded-3xl shadow-2xl p-10 w-full max-w-md transform transition duration-500 hover:scale-[1.04]">
         <h2 className="text-3xl font-extrabold text-center text-[#3b7c76] mb-6 mr-4">
           Welcome Back To ZapCarbon 
         </h2>

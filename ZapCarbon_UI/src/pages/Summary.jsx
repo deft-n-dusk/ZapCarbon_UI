@@ -35,6 +35,7 @@ ChartJS.register(
 const Summary = () => {
   const [summary, setSummary] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
     const fetchSummary = async () => {
@@ -156,14 +157,19 @@ const Summary = () => {
       <div className="w-full h-full relative px-6 pt-[4.5rem]">
         <div className="bg-gradient-to-br from-[#87bc71] to-[#447c62] rounded-xl shadow-md p-6 mb-6 text-center">
           <h2 className="text-xl font-semibold mb-2">Your Total Emissions</h2>
-          <p className="text-4xl font-bold text-white">
+          <p className="text-4xl font-bold text-[#f0f2e7] hover:text-white transition-transform duration-500 hover:scale-[1.06]">
             {summary?.totalEmissions?.toFixed(2)} kg CO₂e
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#bfe2b5] p-6 rounded-xl w-full">
-            <h2 className="text-lg font-semibold mb-4 text-[#2f3e46]">
+          <div onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            className={`bg-[#bfe2b5] p-6 rounded-xl w-full transition-transform duration-500 ${
+              hovered ? "scale-[1.04]" : "scale-[0.96]"
+            }`}
+            >
+            <h2 className="text-lg font-semibold mb-4 ">
               Emission by Type
             </h2>
             {summary.breakdownByType.length === 0 ? (
@@ -171,20 +177,24 @@ const Summary = () => {
                 No activity submitted yet.
               </p>
             ) : (
-              <div className="w-[400px] h-[400px] mx-auto">
+              <div className="w-[400px] h-[400px] mx-auto transition-transform duration-500 hover:scale-[1.04]">
                 <Pie data={emissionByTypeData} />
               </div>
             )}
           </div>
 
-          <div className="bg-[#bfe2b5] p-6 rounded-xl">
-            <h2 className="text-lg font-semibold mb-4">Emissions Over Time</h2>
+          <div
+            className={`bg-[#bfe2b5] p-6 rounded-xl transition-transform duration-500 ${
+              hovered ? "scale-[0.96]" : "hover:scale-[1.04]"
+            }`}
+          >
+            <h2 className="text-lg font-semibold mb-4 ">Emissions Over Time</h2>
             {summary.emissionsOverTime.length === 0 ? (
               <p className="text-center text-gray-600">
                 No activity submitted yet.
               </p>
             ) : (
-              <Line data={emissionOverTimeData} options={emissionOverTimeOptions} />
+              <Line data={emissionOverTimeData} options={emissionOverTimeOptions} className=" transition-transform duration-500 hover:scale-[1.02]"/>
             )}
           </div>
         </div>

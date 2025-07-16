@@ -44,7 +44,7 @@ const History = () => {
           <p className="text-gray-600 text-lg text-center">No activity history found.</p>
         ) : (
           <>
-            <div className="max-w-4xl mx-auto overflow-x-auto rounded-xl bg-gradient-to-br h-[29rem] from-[#a1dbb2] to-[#4d9f7b] shadow-lg p-6">
+            <div className="max-w-4xl mx-auto overflow-x-auto rounded-xl bg-gradient-to-br transition-transform duration-500 hover:scale-[1.04] h-[29rem] from-[#a1dbb2] to-[#4d9f7b] shadow-lg p-6">
               <table className="w-full text-sm text-left text-[#2f3e46]">
                 <thead className="text-xs uppercase bg-[#d3f3df] text-[#2f3e46] rounded-md">
                   <tr>
@@ -59,7 +59,7 @@ const History = () => {
                   {activities.map((activity) => (
                     <tr
                       key={activity._id}
-                      className="border-b border-[#cceadf] hover:bg-[#eaf9f0] transition"
+                      className="border-b border-[#cceadf] hover:bg-[#eaf9f0] transition-transform duration-500 hover:scale-[1.05] "
                     >
                       <td className="py-2 px-4">
                         {activity.date
@@ -93,7 +93,7 @@ const History = () => {
               <button
                 onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
                 disabled={page === 1}
-                className="px-4 py-2 rounded-md bg-[#4d9f7b] text-white hover:bg-[#3e8466] disabled:opacity-50 transition"
+                className="px-4 py-2 rounded-md bg-[#4d9f7b] text-white hover:bg-[#3e8466] disabled:opacity-50 transition-transform duration-500 hover:scale-[1.06]"
               >
                 Previous
               </button>
@@ -103,7 +103,7 @@ const History = () => {
               <button
                 onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
                 disabled={page === totalPages}
-                className="px-4 py-2 rounded-md bg-[#4d9f7b] text-white hover:bg-[#3e8466] disabled:opacity-50 transition"
+                className="px-4 py-2 rounded-md bg-[#4d9f7b] text-white hover:bg-[#3e8466] disabled:opacity-50 transition-transform duration-500 hover:scale-[1.06]"
               >
                 Next
               </button>
