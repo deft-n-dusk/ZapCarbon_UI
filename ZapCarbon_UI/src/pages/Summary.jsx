@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
+import { BASE_URL } from "../config";
 import { Line, Pie } from "react-chartjs-2";
 import {
   TimeScale,
@@ -38,7 +39,7 @@ const Summary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const res = await axios.get("http://localhost:2707/api/summary", {
+        const res = await axios.get(`${BASE_URL}/api/summary`, {
           withCredentials: true,
         });
         console.log("Summary data:", res.data);

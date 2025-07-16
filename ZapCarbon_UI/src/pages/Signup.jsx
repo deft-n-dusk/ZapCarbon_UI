@@ -4,6 +4,7 @@ import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import ZapCarbon_Logo from "../assets/ZapCarbon_Logo.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { BASE_URL } from "../config";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const Signup = () => {
     e.preventDefault();
     setMessage("");
     try {
-      await axios.post("http://localhost:2707/signup", formData, {withCredentials : true});
+      await axios.post(`${BASE_URL}/signup`, formData, {withCredentials : true});
       setMessage("✅ Signup successful!");
       setTimeout(() => {
         navigate("/");

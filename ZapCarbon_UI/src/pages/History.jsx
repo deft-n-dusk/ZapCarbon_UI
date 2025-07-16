@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
+import { BASE_URL } from "../config";
 
 const History = () => {
   const [activities, setActivities] = useState([]);
@@ -14,7 +15,7 @@ const History = () => {
       setLoading(true);
       try {
         const res = await axios.get(
-          `http://localhost:2707/api/activities/history?page=${page}&limit=${limit}`,
+          `${BASE_URL}/api/activities/history?page=${page}&limit=${limit}`,
           { withCredentials: true }
         );
         setActivities(res.data.data);

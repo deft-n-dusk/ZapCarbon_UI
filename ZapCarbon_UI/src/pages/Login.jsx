@@ -4,6 +4,7 @@ import { FaEnvelope, FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom"; 
 import ZapCarbon_Logo from "../assets/ZapCarbon_Logo.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { BASE_URL } from "../config";
 
 
 
@@ -24,7 +25,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:2707/login",
+        `${BASE_URL}/login`,
         {
           emailId: formData.emailId,
           password: formData.password,

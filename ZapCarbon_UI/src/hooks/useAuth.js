@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../config";
 
 
 export default function useAuth() {
@@ -9,7 +10,7 @@ export default function useAuth() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:2707/auth/check", {
+      .get(`${BASE_URL}/auth/check`, {
         withCredentials: true,
       })
       .then((res) => {

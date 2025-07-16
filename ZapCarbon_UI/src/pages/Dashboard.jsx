@@ -6,6 +6,7 @@ import CarbonStatsCard from "../components/CarbonStatsCard";
 import Navbar from '../components/Navbar';
 import useAuth from '../hooks/useAuth';
 import Loader from "../components/Loader";
+import { BASE_URL } from '../config';
 
 
 
@@ -17,12 +18,14 @@ function Dashboard() {
   const [emissionResult, setEmissionResult] = useState(null);
   const [error, setError] = useState("");
 
-  const backendURL = "http://localhost:2707";
+  console.log("BASE_URL:", BASE_URL);
+
+ 
 
   // Fetch activity types on load
   useEffect(() => {
     axios
-      .get(`${backendURL}/api/activities/types`)
+      .get(`${BASE_URL}/api/activities/types`)
       .then((res) => setActivityTypes(res.data))
       .catch((err) => setError("Failed to load activity types."));
   }, []);
@@ -40,7 +43,7 @@ if (loading) return <Loader/>
 
     try {
      const res = await axios.post(
-      `${backendURL}/api/activities/add`,
+      `${BASE_URL}/api/activities/add`,
       {
         type: selectedActivity,
         inputData: { [selected.field]: value }

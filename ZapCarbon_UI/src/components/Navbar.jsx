@@ -2,18 +2,19 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Lucide icons
 import {Link, useNavigate} from "react-router-dom";
 import axios from "axios";
+import { BASE_URL } from "../config";
 
 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-    const backendURL = "http://localhost:2707";
+    
     const navigate = useNavigate();
 
     const handleLogout = async () => {
     try {
-        await axios.post(`${backendURL}/logout`, {}, { withCredentials: true });
+        await axios.post(`${BASE_URL}/logout`, {}, { withCredentials: true });
         navigate("/login"); // ✅ this is enough
     } catch (err) {
         console.error("Logout failed:", err); // Add logging to debug
