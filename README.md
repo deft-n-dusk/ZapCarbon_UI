@@ -1,15 +1,22 @@
 <h1 align="center">
-  <img src="https://i.pinimg.com/736x/33/62/2b/33622bb037899d9c7b2d9bc8355c8f47.jpg" alt="ZapCarbon Logo" height="120"/>
+  <img src="https://i.pinimg.com/736x/33/62/2b/33622bb037899d9c7b2d9bc8355c8f47.jpg" alt="ZapCarbon Logo" height="100"/>
   <br>
   ZapCarbon – Track the Path You Leave
 </h1>
 
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel)](https://zap-carbon-ui.vercel.app/)
-[![React](https://img.shields.io/badge/Frontend-React%20(Vite)%20%2B%20Tailwind-blue?style=for-the-badge&logo=react)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-brightgreen?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/atlas)
-[![Deployment](https://img.shields.io/badge/Deployed%20On-Vercel%20%26%20Render-black?style=for-the-badge&logo=vercel)](https://zap-carbon-ui.vercel.app/)
+
+---
+
+## 🛠️ Tech Stack
+
+Frontend: React (Vite) + Tailwind CSS  
+Backend: Node.js + Express  
+Database: MongoDB Atlas 
+Deployment: Vercel (Frontend) & Render (Backend)
+
+---
 
 ZapCarbon is a **MERN Stack carbon footprint tracker** that helps individuals monitor and reduce their **CO₂ emissions**.  
 It allows users to **log activities, calculate emissions using Indian government (CEA) factors, track totals visually, and analyze patterns over time**.  
@@ -62,14 +69,26 @@ It allows users to **log activities, calculate emissions using Indian government
 
 ## 🖼️ Screenshots
 
-| Dashboard (Main) | Activity Selection | Emission Result |
-|------------------|--------------------|-----------------|
-| ![Dashboard](./ZapCarbon_UI/src/assets/Dashboard_page_ss.png) | ![Activity Selection](./ZapCarbon_UI/src/assets/Activity_ss.png) | ![Result](./ZapCarbon_UI/src/assets/Emission_ss.png) |
+### Dashboard (Main)
+![Dashboard](./ZapCarbon_UI/src/assets/Dashboard_page_ss.png)
 
-| Summary Page | Activity History | Authentication (Login/Signup) |
-|--------------|------------------|-------------------------------|
-| ![Summary](./ZapCarbon_UI/src/assets/Summary_page_ss.png) | ![History](./ZapCarbon_UI/src/assets/History_page_ss.png) | ![Login](./ZapCarbon_UI/src/assets/Login_page_ss.png) ![Signup](./ZapCarbon_UI/src/assets/Signup_page_ss.png) |
+### Activity Selection
+![Activity Selection](./ZapCarbon_UI/src/assets/Activity_ss.png)
 
+### Emission Result
+![Result](./ZapCarbon_UI/src/assets/Emission_ss.png)
+
+### Summary Page
+![Summary](./ZapCarbon_UI/src/assets/Summary_page_ss.png)
+
+### Activity History
+![History](./ZapCarbon_UI/src/assets/History_page_ss.png)
+
+### Authentication - Login
+![Login](./ZapCarbon_UI/src/assets/Login_page_ss.png)
+
+### Authentication - Signup
+![Signup](./ZapCarbon_UI/src/assets/Signup_page_ss.png)
 ---
 
 ## 🛠️ Tech Stack
@@ -95,17 +114,23 @@ It allows users to **log activities, calculate emissions using Indian government
 
 ## ⚙️ Installation & Setup
 
+### 1. Clone the Frontend (UI)
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/zapcarbon.git
-cd zapcarbon
+git clone https://github.com/deft-n-dusk/ZapCarbon_UI.git
+cd ZapCarbon_UI
 
-# Frontend
-cd frontend
+# Install frontend dependencies
 npm install
+
+# Run frontend (Vite)
 npm run dev
 
-# Backend
-cd ../backend
+### 2. Clone the Backend
+```bash
+git clone https://github.com/deft-n-dusk/ZapCarbon_BE.git
+
+# Install backend dependencies
 npm install
-npm start
+
+# Start backend server
+npm run dev
