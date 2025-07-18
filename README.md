@@ -111,10 +111,10 @@ It allows users to **log activities, calculate emissions using Indian government
 - **Backend:** Render  
 
 ---
-
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Frontend (UI)
+
 ```bash
 git clone https://github.com/deft-n-dusk/ZapCarbon_UI.git
 cd ZapCarbon_UI
@@ -124,8 +124,10 @@ npm install
 
 # Run frontend (Vite)
 npm run dev
+```
 
 ### 2. Clone the Backend
+
 ```bash
 git clone https://github.com/deft-n-dusk/ZapCarbon_BE.git
 
@@ -134,3 +136,4 @@ npm install
 
 # Start backend server
 npm run dev
+```
