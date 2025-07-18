@@ -1,4 +1,4 @@
-# 🌱 ZapCarbon – Track the Path You Leave
+# ![ZapCarbon Logo](https://i.pinimg.com/736x/33/62/2b/33622bb037899d9c7b2d9bc8355c8f47.jpg) ZapCarbon – Track the Path You Leave
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel)](https://zap-carbon-ui.vercel.app/)
 [![React](https://img.shields.io/badge/Frontend-React%20(Vite)%20%2B%20Tailwind-blue?style=for-the-badge&logo=react)](https://react.dev/)
@@ -57,13 +57,13 @@ It allows users to **log activities, calculate emissions using Indian government
 
 ## 🖼️ Screenshots
 
-| Dashboard | Activity Selection | Emission Result |
-|-----------|--------------------|-----------------|
-| ![Dashboard](./screenshots/Screenshot-446.png) | ![Activity Selection](./screenshots/Screenshot-447.png) | ![Result](./screenshots/Screenshot-448.png) |
+| Dashboard (Main) | Activity Selection | Emission Result |
+|------------------|--------------------|-----------------|
+| ![Dashboard](./assets/Dashboard_page_ss.png) | ![Activity Selection](./assets/Activity_ss.png) | ![Result](./assets/Emission_ss.png) |
 
-| Summary Page | Activity History | Auth Pages |
-|--------------|------------------|------------|
-| ![Summary](./screenshots/Screenshot-449.png) | ![History](./screenshots/Screenshot-450.png) | ![Auth](./screenshots/Screenshot-453.png) |
+| Summary Page | Activity History | Authentication (Login/Signup) |
+|--------------|------------------|-------------------------------|
+| ![Summary](./assets/Summary_page_ss.png) | ![History](./assets/History_page_ss.png) | ![Auth Pages](./assets/Login_page_ss.png) ![Signup](./assets/Signup_page_ss.png) |
 
 ---
 
