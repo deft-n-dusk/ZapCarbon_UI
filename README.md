@@ -26,7 +26,7 @@ It allows users to **log activities, calculate emissions using Indian government
 ## ✨ Why ZapCarbon?
 
 - **Real-world Impact** – Encourages eco-conscious living by quantifying your environmental footprint.  
-- **Accurate Data** – Emission calculations based on **official Indian Central Electricity Authority (CEA)** factors.  
+- **Accurate Data** – Emission calculations are based on data from the Central Electricity Authority (CEA) and the Ministry of Environment, Forest and Climate Change (MoEFCC), Government of India.  
 - **Clean UI + Engaging Analytics** – Interactive charts, history logs, and responsive design make it user-friendly.  
 - **Scalable MERN Architecture** – Built for production deployment and portfolio-ready.
 
@@ -48,7 +48,7 @@ It allows users to **log activities, calculate emissions using Indian government
 
 - **Interactive Dashboard**  
   - View individual emissions per activity.
-  - Get **real-time results** using CEA-backed emission factors.
+  - Get **real-time results** using CEA and MoEFCC-backed emission factors.
 
 - **Analytics Summary Page**  
   - **Pie Chart:** Emission breakdown by activity.  
