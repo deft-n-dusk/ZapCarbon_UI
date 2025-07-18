@@ -1,4 +1,9 @@
-# ![ZapCarbon Logo](https://i.pinimg.com/736x/33/62/2b/33622bb037899d9c7b2d9bc8355c8f47.jpg) ZapCarbon – Track the Path You Leave
+<h1 align="center">
+  <img src="https://i.pinimg.com/736x/33/62/2b/33622bb037899d9c7b2d9bc8355c8f47.jpg" alt="ZapCarbon Logo" height="120"/>
+  <br>
+  ZapCarbon – Track the Path You Leave
+</h1>
+
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel)](https://zap-carbon-ui.vercel.app/)
 [![React](https://img.shields.io/badge/Frontend-React%20(Vite)%20%2B%20Tailwind-blue?style=for-the-badge&logo=react)](https://react.dev/)
@@ -59,11 +64,11 @@ It allows users to **log activities, calculate emissions using Indian government
 
 | Dashboard (Main) | Activity Selection | Emission Result |
 |------------------|--------------------|-----------------|
-| ![Dashboard](./assets/Dashboard_page_ss.png) | ![Activity Selection](./assets/Activity_ss.png) | ![Result](./assets/Emission_ss.png) |
+| ![Dashboard](./ZapCarbon_UI/src/assets/Dashboard_page_ss.png) | ![Activity Selection](./ZapCarbon_UI/src/assets/Activity_ss.png) | ![Result](./ZapCarbon_UI/src/assets/Emission_ss.png) |
 
 | Summary Page | Activity History | Authentication (Login/Signup) |
 |--------------|------------------|-------------------------------|
-| ![Summary](./assets/Summary_page_ss.png) | ![History](./assets/History_page_ss.png) | ![Auth Pages](./assets/Login_page_ss.png) ![Signup](./assets/Signup_page_ss.png) |
+| ![Summary](./ZapCarbon_UI/src/assets/Summary_page_ss.png) | ![History](./ZapCarbon_UI/src/assets/History_page_ss.png) | ![Login](./ZapCarbon_UI/src/assets/Login_page_ss.png) ![Signup](./ZapCarbon_UI/src/assets/Signup_page_ss.png) |
 
 ---
 
