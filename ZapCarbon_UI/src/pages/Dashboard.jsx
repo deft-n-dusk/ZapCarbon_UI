@@ -30,8 +30,16 @@ function Dashboard() {
       .catch((err) => setError("Failed to load activity types."));
   }, []);
 
- const {user, loading} = useAuth();
-if (loading) return <Loader/>
+ const { user, loading } = useAuth();
+
+  if (loading) return <Loader />;
+
+  // ⛔ Prevent crash if not authenticated
+  if (!user) {
+    window.location.href = "/login"; // redirect to login
+    return null;
+  }
+
   
   const handleSubmit = async () => {
     const selected = activityTypes.find(a => a.type === selectedActivity);
