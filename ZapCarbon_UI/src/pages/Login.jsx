@@ -48,7 +48,7 @@ const Login = () => {
         <h2 className="text-3xl font-extrabold text-center text-[#3b7c76] mb-6 mr-4">
           Welcome Back To ZapCarbon 
         </h2>
-        <img className="w-20 absolute top-14 right-24" src={ZapCarbon_Logo} alt="ZapCarbon Logo" />
+        
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-2 shadow-inner focus-within:ring-2 focus-within:ring-[#94e37f]">
